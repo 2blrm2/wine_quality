@@ -5,6 +5,8 @@ import pandas as pd
 import sklearn
 import argparse
 
+#EXtra
+
 def read_parms(config_path):
     with open(config_path) as yaml_file:
         config= yaml.safe_load(yaml_file)
@@ -15,7 +17,7 @@ def get_data(config_path):
     #print(config)
     data_path = config["data_source"]["s3_source"]
     df = pd.read_csv(data_path,sep=",",encoding= "utf-8")
-    print(df.head())
+    #print(df.head())
     return df
 
 if __name__ == "__main__":
