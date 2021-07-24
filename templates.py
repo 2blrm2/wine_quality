@@ -9,7 +9,7 @@ for dir_ in dirs:
     with open(os.path.join(dir_, ".gitkeep"), "w") as f:
         pass
 
-files=["dvc.yaml","parms.yaml","README.md",".gitignore",
+files=["dvc.yaml","params.yaml","README.md",".gitignore",
        os.path.join("src","__init__.py")]
 
 for file_ in files:
